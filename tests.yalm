@@ -1,0 +1,8 @@
+- name: tests
+  workspaces:
+    - name: source
+      workspace: pipeline-workspace
+  taskRef:
+    name: jasmine
+  runAfter:
+    - npminstall
